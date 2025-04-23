@@ -68,7 +68,7 @@ Minimal example for `config.yaml`:
 
 ```yaml
 rounds:
-  - Yucatan
+  - CdV
 
 threads:
   adapter_removal: 8
