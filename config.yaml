@@ -1,0 +1,14 @@
+# Configuration file for Snakemake pipeline
+# List of dataset rounds to process
+rounds:
+  - CanadadVirgen
+# Thread allocation per rule
+threads:
+  adapter_removal: 8
+  bwa: 8
+  samtools: 8
+# Input/output paths and additional resources
+Paths:
+  data_dir: /data/projects/aDNA_hackaton/data           # Directory with raw FASTQ files
+  output_dir: /data/projects/aDNA_hackaton/preproc      # Directory to store processed output
+  sites: "/data/users/dorozco/dorozco/ReferencePanels/1KG-HGDP_b37/all_genome.no0.nochr.sites"  # Path to predefined SNP sites for variant calling
